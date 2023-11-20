@@ -1,0 +1,35 @@
+@import "../../helpers/helpers.scss";
+
+.who_we_are{
+    
+    .who_we_are_box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 60px;
+        align-items: center;
+
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 40px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            grid-gap: 30px;
+        }
+    }
+ 
+    .board_directors_box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 36px;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            grid-gap: 15px;
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 40px;
+        }
+    }
+
+}

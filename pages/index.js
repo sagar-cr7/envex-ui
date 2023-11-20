@@ -5,6 +5,7 @@ import Head from "next/head";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import Banner from "@/sections/home/Banner";
+import WhoWeAre from "@/sections/home/WhoWeAre";
 import OurBusiness from "@/sections/home/OurBusiness";
 import Comit from "@/sections/home/Comit";
 import What from "@/sections/home/What";
@@ -31,6 +32,7 @@ export default function Home() {
 			<Header />
 			<main className={`${styles.index_page}`}>
 				<Banner />
+				<WhoWeAre />
 				<OurBusiness />
 				<Comit />
 				<What />
