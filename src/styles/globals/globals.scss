@@ -76,7 +76,7 @@ picture {
 }
 
 .color_white{
-  color: var(--color_white);
+  color: var(--color_white) !important;
 }
 
 .hidden-xs {
@@ -115,6 +115,10 @@ picture {
   @extend .text_xxxl;
   font-family: var(--o_s_b);
   color: var(--color_secondary);
+}
+
+.active_header{
+	transform: translateX(-15px) !important;
 }
 
 .pt_10 {

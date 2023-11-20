@@ -6,6 +6,13 @@
         height: 100vh;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+        .dots{
+            top: 50%;
+            left: -80px;
+            position: absolute;
+            transform: translateY(-50%);
+        }
         .box{
             width: 40%;
             &:last-child{
@@ -15,6 +22,20 @@
             }
             h4{
                 color: #313133;
+            }
+            ul{
+                padding-left: 30px;
+                li{
+                    list-style: none;
+                    position: relative;
+                    margin-bottom: 15px;
+                    .li_img{
+                        top: 50%;
+                        left: -30px;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                }
             }
         }
     }

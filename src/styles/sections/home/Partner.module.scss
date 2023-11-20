@@ -4,4 +4,97 @@
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
     background-color: var(--color_secondary); 
+    .partner{
+        display: flex;
+        .info{
+            width: 50%;
+            padding-right: 50px;
+            p{
+                opacity: 0.7;
+            }
+            ul{
+                li{
+                    list-style: none;
+                    position: relative;
+                    margin-bottom: 20px;
+                    .li_img{
+                        top: 3px;
+                        left: -40px;
+                        position: absolute;
+                    }
+                    a{
+                        color: var(--color_white);
+                    }
+                }
+            }
+        }
+        .form{
+            width: 50%;
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid #B6B5C5;
+            .form_group{
+                .form_field{
+                    input{
+                        width: 100%;
+                        border: 0;
+                        opacity: 0.7;
+                        font-size: 16px;
+                        margin-bottom: 40px;
+                        font-family: var(--n_e_l);
+                        color: var(--color_white);
+                        background-color: transparent;
+                        border-bottom: 1px solid #B6B5C5;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    input::placeholder {
+                        font-family: var(--n_e_l);
+                        color: var(--color_white);
+                    }
+                }
+                .msg{
+                    textarea{
+                        width: 100%;
+                        border: 0;
+                        opacity: 0.7;
+                        font-size: 16px;
+                        margin-bottom: 40px;
+                        color: var(--color_white);
+                        font-family: var(--n_e_l);
+                        background-color: transparent;
+                        border-bottom: 1px solid #B6B5C5;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    textarea::placeholder {
+                        font-family: var(--n_e_l);
+                        color: var(--color_white);
+                    }
+                }
+            }
+            .submit_button{
+                .button{
+                    input{
+                        border: 0;
+                        padding: 0;
+                        opacity: 0.7;
+                        font-size: 18px;
+                        padding-bottom: 5px;
+                        margin-bottom: 10px;
+                        font-family: var(--n_e_l);
+                        color: #A8CA9A;
+                        cursor: pointer;
+                        background-color: transparent;
+                        border-bottom: 2px solid var(--color_white);
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

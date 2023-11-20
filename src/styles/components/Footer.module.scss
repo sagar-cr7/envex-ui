@@ -1,5 +1,19 @@
 @import "../helpers/helpers.scss";
 
 .main_footer {
-  // height: 100px;
+  background-color: var(--color_secondary);
+  .footer_box{
+    display: flex;
+    padding: 30px 50px;
+    align-items: center;
+    background-color: #1A1A1A;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: space-between;
+    .left_box{
+      p{
+        font-family: var(--n_e_l);
+      }
+    }
+  }
 }

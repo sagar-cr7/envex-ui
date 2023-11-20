@@ -37,7 +37,7 @@ export default function Home() {
 				<Focus />
 				<Partner />
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }

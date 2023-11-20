@@ -9,6 +9,13 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
+        position: relative;
+        .dots{
+            top: 50%;
+            left: -80px;
+            position: absolute;
+            transform: translateY(-50%);
+        }
         .box{
             width: 40%;
             &:last-child{
@@ -16,8 +23,15 @@
                 padding-left: 40px;
                 padding-top: 10px;
             }
-            h4{ 
+           .btn_section{
+            p{
+                padding-top: 30px;
+                a{
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid var(--color_white);
+                }
             }
+           }
         }
     }
 }
