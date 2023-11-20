@@ -33,8 +33,10 @@ export default function Home() {
 			<main className={`${styles.index_page}`}>
 				<Banner />
 				<WhoWeAre />
-				<OurBusiness />
-				<Comit />
+				<section className="full_sticky_animation">
+					<OurBusiness />
+					<Comit />
+				</section>
 				<What />
 				<Focus />
 				<Partner />

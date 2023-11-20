@@ -132,6 +132,11 @@ picture {
 	transform: translateX(-15px) !important;
 }
 
+.sticky_animation{
+	position: sticky;
+	top: 80px;
+}
+
 // flex class start
 .d_f {
 	display: flex;

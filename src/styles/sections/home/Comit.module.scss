@@ -8,11 +8,12 @@
         padding-top: 50px;
     }
     .business{
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
         position: relative;
+        padding: 60px 0 0;
         @media (max-width: 767px) {
             height: auto;
             flex-wrap: wrap;
