@@ -7,6 +7,10 @@
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+            height: auto;
+        }
         .dots{
             top: 50%;
             left: -80px;
@@ -15,13 +19,23 @@
         }
         .box{
             width: 40%;
+            @media (max-width: 767px) {
+                width: 100%;
+            }
             &:last-child{
                 width: 60%;
                 padding-left: 40px;
                 padding-top: 10px;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    padding-left: 0;
+                }
             }
             h4{
                 color: #313133;
+                @media (max-width: 767px) {
+                    padding-bottom: 10px;
+                }
             }
             ul{
                 padding-left: 30px;

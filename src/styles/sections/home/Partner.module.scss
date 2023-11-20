@@ -6,9 +6,14 @@
     background-color: var(--color_secondary); 
     .partner{
         display: flex;
+        flex-wrap: wrap;
         .info{
             width: 50%;
             padding-right: 50px;
+            @media (max-width: 767px) {
+                width: 100%;
+                padding-right: 0;
+            }
             p{
                 opacity: 0.7;
             }
@@ -33,6 +38,10 @@
             padding: 50px;
             border-radius: 20px;
             border: 1px solid #B6B5C5;
+            @media (max-width: 767px) {
+                width: 100%;
+                padding: 40px 25px;
+            }
             .form_group{
                 .form_field{
                     input{

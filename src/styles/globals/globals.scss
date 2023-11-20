@@ -123,6 +123,10 @@ picture {
   @extend .text_xxxl;
   font-family: var(--o_s_b);
   color: var(--color_secondary);
+  @media (max-width: 767px) {
+	font-size: 45px;
+	line-height: 50px;
+}
 }
 .active_header{
 	transform: translateX(-15px) !important;
@@ -407,7 +411,7 @@ picture {
 		}
 		@media (max-width: 767px) {
 			font-size: 16px;
-			margin-right: 10px;
+			margin-right: 15px;
 		}
 	  }
 	  

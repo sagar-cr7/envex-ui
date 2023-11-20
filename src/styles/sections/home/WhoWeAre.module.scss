@@ -1,7 +1,11 @@
 @import "../../helpers/helpers.scss";
 
 .who_we_are{
-    
+    .title{
+        @media (max-width: 767px) {
+            padding-bottom: 20px;
+        }
+    }
     .who_we_are_box{
         display: grid;
         grid-template-columns: repeat(2,1fr);

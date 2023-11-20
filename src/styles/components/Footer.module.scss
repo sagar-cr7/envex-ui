@@ -10,7 +10,15 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      justify-content: center;
+      padding: 20px;
+  }
     .left_box{
+      @media (max-width: 767px) {
+        padding-bottom: 15px;
+    }
       p{
         font-family: var(--n_e_l);
       }

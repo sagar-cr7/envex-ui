@@ -21,6 +21,10 @@
 .text_lg {
   font-size: 32px;
   line-height: 40px;
+  @media (max-width: 767px) {
+    font-size: 28px;
+    list-style: 36px;
+}
 }
 .text_xl {
   font-size: 38px;
@@ -33,6 +37,10 @@
 .text_xxxl {
   font-size: 55px;
   line-height: 60px;
+  @media (max-width: 767px) {
+    font-size: 33px;
+    line-height: 42px;
+  }
 }
 // .text_xxxxl {}
 
