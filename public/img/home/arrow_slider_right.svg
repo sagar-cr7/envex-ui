@@ -1,0 +1,9 @@
+<svg id="arrow_slider_right" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Ellipse_241" data-name="Ellipse 241" fill="none" stroke="#a8ca9a" stroke-width="1">
+    <circle cx="15" cy="15" r="15" stroke="none"/>
+    <circle cx="15" cy="15" r="14.5" fill="none"/>
+  </g>
+  <g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(12.115 8)">
+    <path id="Path_46236" data-name="Path 46236" d="M7.5,21.27l6.885-6.885L7.5,7.5" transform="translate(-7.5 -7.5)" fill="none" stroke="#3f3075" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+@import "../../helpers/helpers.scss";
+
+.what_make{
+    .what_section{
+        display: flex;
+        grid-gap: 25px;
+        flex-wrap: wrap;
+        .box{
+            padding: 40px;
+            width: 31.87%;
+            border-radius: 20px;
+            background-color: var(--color_tertiary);
+        }
+    }
+}

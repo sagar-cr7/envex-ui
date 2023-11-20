@@ -1,16 +1,39 @@
 // .text_xxs {}
-// .text_xs {}
-// .text_sm {}
+.text_xs {
+  font-size: 16px;
+  line-height: 32px;
+}
+.text_sm {
+  font-size: 18px;
+  line-height: 28px;
+}
 
 //for default body copy font
 .text_reg {
+  font-size: 20px;
+  line-height: 28px;
 }
 
-// .text_md {}
-// .text_lg {}
-// .text_xl {}
-// .text_xxl {}
-// .text_xxxl {}
+.text_md {
+  font-size: 24px;
+  line-height: 32px;
+}
+.text_lg {
+  font-size: 32px;
+  line-height: 40px;
+}
+.text_xl {
+  font-size: 38px;
+  line-height: 42px;
+}
+.text_xxl {
+  font-size: 42px;
+  line-height: 50px;
+}
+.text_xxxl {
+  font-size: 55px;
+  line-height: 60px;
+}
 // .text_xxxxl {}
 
 // //each loop for creating font weights ->

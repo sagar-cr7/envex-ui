@@ -1,0 +1,21 @@
+@import "../../helpers/helpers.scss";
+
+.business_section{
+    background-color: var(--color_primary);
+    .business{
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        .box{
+            width: 40%;
+            &:last-child{
+                width: 60%;
+                padding-left: 40px;
+                padding-top: 10px;
+            }
+            h4{
+                color: #313133;
+            }
+        }
+    }
+}

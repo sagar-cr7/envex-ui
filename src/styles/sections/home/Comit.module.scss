@@ -1,0 +1,23 @@
+@import "../../helpers/helpers.scss";
+
+.comit{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../../../public/img/home/comit_bg.jpg);
+    .business{
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        .box{
+            width: 40%;
+            &:last-child{
+                width: 60%;
+                padding-left: 40px;
+                padding-top: 10px;
+            }
+            h4{ 
+            }
+        }
+    }
+}

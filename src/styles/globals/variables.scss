@@ -3,13 +3,26 @@ $browser-prefixes: false !default;
 
 :root {
   //fonts
-  --font_primary: "Paytone One", sans-serif;
-  --font_secondary: "Paytone One", sans-serif;
+  --n_r: "NunitoSans_10pt-Regular";
+  --n_m: "NunitoSans_10pt-Medium";
+  --n_s_b: "NunitoSans_10pt-SemiBoldc";
+
+  --o_e_l: "Onest-ExtraLight";
+  --o_l: "Onest-Light";
+  --o_r: "Onest-Regular";
+  --o_m: "Onest-Medium";
+  --o_s_b: "Onest-SemiBold";
+  --o_b: "Onest-Bold";
+  --o_e_b: "Onest-ExtraBold";
+  --o_bl: "Onest-Black";
+  --o_t: "Onest-Thin";
 
   //colors
-  --color_primary: #ffff00;
-  --color_secondary: #000000;
+  --color_primary: #A8CA9A;
+  --color_secondary: #3F3075;
+  --color_tertiary: #E9EEE7;
   --color_white: #fff;
+  --color_text: #313133;
 
   //extras
   --container_width: 100%;
@@ -28,7 +41,7 @@ $browser-prefixes: false !default;
   }
 
   @media (min-width: 1401px) {
-    --container_width: 1360px;
+    --container_width: 1170px;
   }
 
   --container_left_space: calc((100% - var(--container_width)) / 2);

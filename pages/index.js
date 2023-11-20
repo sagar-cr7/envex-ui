@@ -4,6 +4,12 @@
 import Head from "next/head";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
+import Banner from "@/sections/home/Banner";
+import OurBusiness from "@/sections/home/OurBusiness";
+import Comit from "@/sections/home/Comit";
+import What from "@/sections/home/What";
+import Focus from "@/sections/home/Focus";
+import Partner from "@/sections/home/Partner";
 
 // SECTIONS //
 
@@ -23,10 +29,15 @@ export default function Home() {
 			</Head>
 
 			<Header />
-			<main className={`${styles.index_page} bg_secondary`}>
-				<h2>This is ting base next.js template</h2>
+			<main className={`${styles.index_page}`}>
+				<Banner />
+				<OurBusiness />
+				<Comit />
+				<What />
+				<Focus />
+				<Partner />
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }
