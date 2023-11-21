@@ -6,6 +6,17 @@ import { useState, useRef, useEffect } from "react";
 // SECTIONS //
 
 // PLUGINS //
+import * as Scroll from "react-scroll";
+import Link from "next/link";
+import {
+	Link as ScrollSection,
+	Button,
+	Element,
+	Events,
+	animateScroll as scroll,
+	scrollSpy,
+	scroller,
+} from "react-scroll";
 
 // STYLES //
 import styles from "../styles/components/Header.module.scss";
@@ -27,39 +38,108 @@ const Header = () => {
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
 	};
+
+	const [sidebarActive, setSidebarActive] = useState(false);
+	let scroll = Scroll.animateScroll;
+
 	return (
 		<div className={`${styles.main_header}`}>
 			<div className="container">
 				<div className={`${styles.header_box}`}>
 					<div className={`${styles.left_box}`}>
-						<img src={Logo.src} className="img-responsive" />
+						<a href="/">
+							<img src={Logo.src} className="img-responsive" />
+						</a>
 					</div>
 					<div className={`${styles.right_box} ${isActive ? "active_header" : ""}`}>
 						<ul>
 							<li>
-								<a href="#">About us</a>
+								<ScrollSection
+									onClick={() => setSidebarActive(!sidebarActive)}
+									activeClass="active"
+									to="about_us"
+									spy={true}
+									smooth={true}
+									offset={-50}
+									duration={500}
+									className={`${styles.menu_link} `}
+								>
+									About us
+								</ScrollSection>
 							</li>
 							<li>
-								<a href="#">ACX-ENVEX Partnership</a>
+								<ScrollSection
+									onClick={() => setSidebarActive(!sidebarActive)}
+									activeClass="active"
+									to="ace"
+									spy={true}
+									smooth={true}
+									offset={-50}
+									duration={500}
+									className={`${styles.menu_link} `}
+								>
+									ACX-ENVEX Partnership
+								</ScrollSection>
 							</li>
 							<li>
-								<a href="#">COMIT</a>
+								<ScrollSection
+									onClick={() => setSidebarActive(!sidebarActive)}
+									activeClass="active"
+									to="comit"
+									spy={true}
+									smooth={true}
+									offset={-50}
+									duration={500}
+									className={`${styles.menu_link} `}
+								>
+									COMIT
+								</ScrollSection>
 							</li>
 							<li>
-								<a href="#">USPs</a>
+								<ScrollSection
+									onClick={() => setSidebarActive(!sidebarActive)}
+									activeClass="active"
+									to="usps"
+									spy={true}
+									smooth={true}
+									offset={-50}
+									duration={500}
+									className={`${styles.menu_link} `}
+								>
+									USPs
+								</ScrollSection>
 							</li>
 							<li>
-								<a href="#">Events</a>
+								<ScrollSection
+									onClick={() => setSidebarActive(!sidebarActive)}
+									activeClass="active"
+									to="event"
+									spy={true}
+									smooth={true}
+									offset={-50}
+									duration={500}
+									className={`${styles.menu_link} `}
+								>
+									Events
+								</ScrollSection>
 							</li>
 							<li>
-								<a href="#">Contact Us</a>
+								<ScrollSection
+									onClick={() => setSidebarActive(!sidebarActive)}
+									activeClass="active"
+									to="contact"
+									spy={true}
+									smooth={true}
+									offset={-50}
+									duration={500}
+									className={`${styles.menu_link} `}
+								>
+									Contact Us
+								</ScrollSection>
 							</li>
 						</ul>
 					</div>
 					<div onClick={handleButtonClick} className={`${styles.left} visible-xs`}>
-						{/* Left-side menu icon */}
-						{/* <div className={styles.menuIcon}>☰</div> */}
-
 						<div
 							className={`${styles.menu_icon} ${isOpen ? styles.menu_open : ""}`}
 							onClick={toggleMenu}

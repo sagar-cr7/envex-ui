@@ -10,6 +10,17 @@ import VisibilitySensor from "react-visibility-sensor";
 
 // PLUGINS //
 import Slider from "react-slick";
+import * as Scroll from "react-scroll";
+import Link from "next/link";
+import {
+	Link as ScrollSection,
+	Button,
+	Element,
+	Events,
+	animateScroll as scroll,
+	scrollSpy,
+	scroller,
+} from "react-scroll";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,7 +39,7 @@ export default function Banner() {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoaded(true);
-		}, 500);
+		}, 0);
 	}, []);
 	var settings = {
 		dots: false,

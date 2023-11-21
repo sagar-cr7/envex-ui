@@ -9,9 +9,11 @@
         top: 50%;
         left: 50%;
         z-index: 26;
+        width: 100vw;
+        height: 100vh;
         position: absolute;
         transition: all 2s;
-        transform: translate(-50%,-50%) scale(1);
+        transform: translate(-50%,-50%) scale(1.1);
     }
    
     .banner_img{
@@ -90,7 +92,7 @@
         flex-wrap: wrap;
         opacity: 0;
         bottom: -100px;
-        transition: all 3s;
+        transition: all 2.5s;
         position: absolute;
         width: 85%;
         margin: auto;
@@ -122,6 +124,7 @@
     }
     &.banner_animation_onload{
         .loader_img{
+            z-index: 1;
             opacity: 1;
             transform: translate(-50%,-50%) scale(15);
         }

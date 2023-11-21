@@ -128,6 +128,14 @@ picture {
 	line-height: 50px;
 }
 }
+
+.active_pop{
+	display: block !important;
+}
+
+.active_popC{
+	display: none !important;
+}
 .active_header{
 	transform: translateX(-15px) !important;
 }

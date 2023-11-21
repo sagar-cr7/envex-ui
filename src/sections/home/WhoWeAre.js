@@ -1,11 +1,16 @@
 /* eslint-disable no-redeclare */
 // MODULES //
+import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 // COMPONENTS //
 
 // SECTIONS //
 
 // PLUGINS //
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // STYLES //
 import styles from "../../styles/sections/home/WhoWeAre.module.scss";
@@ -13,13 +18,36 @@ import styles from "../../styles/sections/home/WhoWeAre.module.scss";
 // IMAGES //
 import envex from "../../../public/img/home/who_we_are/envex.jpg";
 import ourPartner from "../../../public/img/home/who_we_are/our_partner.jpg";
-import Vishwajit_Dahanukar from "../../../public/img/home/who_we_are/Vishwajit_Dahanukar.png";
-import AdityaSapru from "../../../public/img/home/who_we_are/Aditya_Sapru.png";
+import Vishwajit_Dahanukar from "../../../public/img/home/Vishwajit_Dahanukar.png";
+import AdityaSapru from "../../../public/img/home/Aditya_Sapru.png";
 import plusIcon from "../../../public/img/plus_icon.svg";
+import Close from "../../../public/img/home/close.svg";
+import Linkedin from "../../../public/img/home/linkedin.svg";
+import ArrowSliderRight from "../../../public/img/home/arrow_slider_right.svg";
+import Pravin from "../../../public/img/home/pravin.png";
 
 /** Home Hero Section */
 export default function WhoWeAre() {
+	const [isActive, setIsActive] = useState(false);
+
+	const handleClick = (e, targetName) => {
+		setIsActive(!isActive);
+		e.preventDefault();
+		setTargetName(targetName);
+	};
+	const [isActiveC, setIsActiveC] = useState(false);
+
+	const handleClickC = () => {
+		setIsActiveC(!isActiveC);
+	};
+	const sliderRef = useRef(null);
+	const [targetName, setTargetName] = useState(null);
+
 	useEffect(() => {
+		if (targetName) {
+			const slideno = targetName.dataset.slide;
+			sliderRef.current.slickGoTo(parseInt(slideno, 10) - 1);
+		}
 		const tabSets = document.querySelectorAll(".main_tab_row");
 
 		tabSets.forEach(function (tabSet) {
@@ -71,10 +99,105 @@ export default function WhoWeAre() {
 
 			setActiveTab(0);
 		});
-	}, []);
+	}, [targetName]);
+
+	var settings = {
+		dots: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: (
+			<button className={`${styles.prevarrow}`}>
+				<Image src={ArrowSliderRight.src} alt="arrow" width={56} height={56} />
+			</button>
+		),
+		nextArrow: (
+			<button className={`${styles.nextarrow}`}>
+				<Image src={ArrowSliderRight.src} alt="arrow" width={56} height={56} />
+			</button>
+		),
+	};
 
 	return (
-		<div className={`${styles.who_we_are} who_we_are_tab ptb_100`}>
+		<div
+			className={`${styles.who_we_are} who_we_are_tab ptb_100`}
+			name="about_us"
+		>
+			<div
+				className={`${styles.main_popup} ${
+					isActive ? "active_pop" : "active_popC"
+				} popUp`}
+				id="popUp"
+			>
+				<div className={`${styles.popup_section}`}>
+					<Slider {...settings} ref={sliderRef}>
+						<div className={`${styles.popup}`}>
+							<div className={`${styles.img_text}`}>
+								<div className={`${styles.img}`}>
+									<img src={Vishwajit_Dahanukar.src} className="img-responsive b_r_20" />
+								</div>
+								<div className={`${styles.text}`}>
+									<h4 className="text_lg f_w_b color_secondary">Vishwajit Dahanukar</h4>
+									<h6 className="text_md pt_10">Founder & Managing Partner</h6>
+									<img src={Linkedin.src} className="img-responsive pt_40" />
+								</div>
+							</div>
+							<p className="pt_30">
+								A serial entrepreneur with a deep passion for renewables and carbon
+								business. He has been actively associated with, built and managed
+								businesses in the carbon space over the last 15+ years. A trained
+								chemical engineer, Vishwajit has run multiple businesses over the last
+								25+ years. At ENVEX, he leads the strategy and business development
+								functions.
+							</p>
+						</div>
+						<div className={`${styles.popup}`}>
+							<div className={`${styles.img_text}`}>
+								<div className={`${styles.img}`}>
+									<img src={Vishwajit_Dahanukar.src} className="img-responsive b_r_20" />
+								</div>
+								<div className={`${styles.text}`}>
+									<h4 className="text_lg f_w_b color_secondary">Pravin Dongre</h4>
+									<h6 className="text_md pt_10">Founder & Managing Partner</h6>
+									<img src={Linkedin.src} className="img-responsive pt_40" />
+								</div>
+							</div>
+							<p className="pt_30">
+								A serial entrepreneur with a deep passion for renewables and carbon
+								business. He has been actively associated with, built and managed
+								businesses in the carbon space over the last 15+ years. A trained
+								chemical engineer, Vishwajit has run multiple businesses over the last
+								25+ years. At ENVEX, he leads the strategy and business development
+								functions.
+							</p>
+						</div>
+						<div className={`${styles.popup}`}>
+							<div className={`${styles.img_text}`}>
+								<div className={`${styles.img}`}>
+									<img src={Vishwajit_Dahanukar.src} className="img-responsive b_r_20" />
+								</div>
+								<div className={`${styles.text}`}>
+									<h4 className="text_lg f_w_b color_secondary">Aditya Sapru</h4>
+									<h6 className="text_md pt_10">Founder & Managing Partner</h6>
+									<img src={Linkedin.src} className="img-responsive pt_40" />
+								</div>
+							</div>
+							<p className="pt_30">
+								A serial entrepreneur with a deep passion for renewables and carbon
+								business. He has been actively associated with, built and managed
+								businesses in the carbon space over the last 15+ years. A trained
+								chemical engineer, Vishwajit has run multiple businesses over the last
+								25+ years. At ENVEX, he leads the strategy and business development
+								functions.
+							</p>
+						</div>
+					</Slider>
+					<div className={`${styles.close_btn}`} onClick={handleClick}>
+						<img src={Close.src} className="img-responsive" />
+					</div>
+				</div>
+			</div>
 			<div className="container">
 				<div className={`${styles.title} section_title pb_40`}>Who we are</div>
 				<div className="main_tab_row">
@@ -125,24 +248,49 @@ export default function WhoWeAre() {
 						<h3 className="text_xl color_secondary f_w_s_b">Board Of Directors</h3>
 						<div className={`${styles.board_directors_box} pt_40`}>
 							<div className={`${styles.board_directors_info}`}>
-								<img src={Vishwajit_Dahanukar.src} className="img-responsive b_r_20" />
+								<div className={`${styles.board_img}`}>
+									<img src={Vishwajit_Dahanukar.src} className="img-responsive b_r_20" />
+								</div>
 								<div className={`${styles.box_inside} f_j pt_20`}>
 									<h4 className="text_md f_w_b color_secondary">Vishwajit Dahanukar</h4>
-									<img src={plusIcon.src} className="img-responsive" />
+									<img
+										src={plusIcon.src}
+										className="img-responsive"
+										data-target="#popUp"
+										data-slide="1"
+										onClick={(e) => handleClick(e, e.target)}
+									/>
 								</div>
 							</div>
 							<div className={`${styles.board_directors_info}`}>
-								<img src={Vishwajit_Dahanukar.src} className="img-responsive b_r_20" />
+								<div className={`${styles.board_img}`}>
+									<img src={Pravin.src} className="img-responsive b_r_20" />
+								</div>
 								<div className={`${styles.box_inside} f_j pt_20`}>
 									<h4 className="text_md f_w_b color_secondary">Pravin Dongre</h4>
-									<img src={plusIcon.src} className="img-responsive" />
+									<img
+										src={plusIcon.src}
+										className="img-responsive"
+										data-target="#popUp"
+										data-slide="2"
+										onClick={(e) => handleClick(e, e.target)}
+									/>
 								</div>
 							</div>
 							<div className={`${styles.board_directors_info}`}>
-								<img src={AdityaSapru.src} className="img-responsive b_r_20" />
+								<div className={`${styles.board_img}`}>
+									<img src={AdityaSapru.src} className="img-responsive b_r_20" />
+								</div>
 								<div className={`${styles.box_inside} f_j pt_20`}>
 									<h4 className="text_md f_w_b color_secondary">Aditya Sapru</h4>
-									<img src={plusIcon.src} className="img-responsive" />
+									<img
+										src={plusIcon.src}
+										className="img-responsive"
+										// onClick={handleClick}
+										data-target="#popUp"
+										data-slide="3"
+										onClick={(e) => handleClick(e, e.target)}
+									/>
 								</div>
 							</div>
 						</div>
