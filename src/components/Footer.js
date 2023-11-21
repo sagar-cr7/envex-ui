@@ -24,7 +24,9 @@ const Footer = () => {
 						</p>
 					</div>
 					<div className={`${styles.right_box}`}>
-						<img src={TingLogo.src} />
+						<a target="_blank" href="https://www.ting.in/">
+							<img src={TingLogo.src} alt="ting logo" />
+						</a>
 					</div>
 				</div>
 			</div>

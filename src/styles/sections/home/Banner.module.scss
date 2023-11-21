@@ -13,7 +13,7 @@
         height: 100vh;
         position: absolute;
         transition: all 2s;
-        transform: translate(-50%,-50%) scale(1.1);
+        transform: translate(-50%,-50%) scale(1);
     }
    
     .banner_img{
@@ -97,7 +97,7 @@
         width: 85%;
         margin: auto;
         left: 50%;
-        padding: 25px 50px;
+        padding: 25px 35px;
         transform: translateX(-50%);
         background-color: #ffffff05;
         backdrop-filter: blur(12px);
@@ -107,6 +107,7 @@
        
         .counter_box{
             width: 25%;
+            padding: 0 15px;
             border-right: 1px solid #A8CA9A;
             &:last-child{
                 border-right: 0;

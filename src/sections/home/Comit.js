@@ -18,7 +18,7 @@ import ComitLogo from "../../../public/img/home/comit_logo.svg";
 /** Home Hero Section */
 export default function Comit() {
 	return (
-		<div className={`${styles.comit} sticky_animation`} name="comit">
+		<div className={`${styles.comit} sticky_animation pt_100`} name="comit">
 			<div className="container">
 				<div className={`${styles.business}`}>
 					<img src={Dots2.src} className={`${styles.dots} img-responsive`} />

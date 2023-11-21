@@ -30,7 +30,7 @@ import styles from "../../styles/sections/home/Banner.module.scss";
 
 // IMAGES //
 import BannerImg from "../../../public/img/home/banner.jpg";
-import Overlay from "../../../public/img/home/banner_layer.svg";
+import Overlay from "../../../public/img/home/banner_layer.png";
 import Image from "next/image";
 
 /** Home Hero Section */
