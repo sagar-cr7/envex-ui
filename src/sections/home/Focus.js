@@ -28,7 +28,7 @@ import FocusIcon1 from "../../../public/img/home/focus_icon_1.png";
 import Pluse from "../../../public/img/home/focus_pluse.png";
 // import FirstIcon1 from "../../../public/img/home/first_icon_1.HEIC";
 import FirstIcon2 from "../../../public/img/home/first_icon_2.png";
-import FirstIcon3 from "../../../public/img/home/first_icon_3.jpg";
+import FirstIcon3 from "../../../public/img/home/Vishwajit_Dahanukar.png";
 // import FirstIcon4 from "../../../public/img/home/first_icon_4.heic";
 
 /** Home Hero Section */
