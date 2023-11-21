@@ -10,6 +10,8 @@
         @media (max-width: 767px) {
             flex-wrap: wrap;
             height: auto;
+            padding-top: 40px;
+            min-height: auto;
         }
         .dots{
             top: 50%;

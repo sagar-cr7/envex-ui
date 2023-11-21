@@ -20,13 +20,32 @@
             border: 1px solid #C5CCD0;
             transform: translate(-50%,-50%);
             background-color: var(--color_white);
+            @media (max-width: 767px) {
+                width: 95%;
+                height: 90vh;
+                overflow: hidden;
+                padding: 20px 10px;
+                overflow-y: scroll;
+            }
             .popup{ 
                 .img_text{
                     display: flex;
                     align-items: center;
-                    .img{}
+                    @media (max-width: 767px) {
+                        flex-wrap: wrap;
+                    }
+                    .img{
+                        @media (max-width: 767px) {
+                            width: 100%;
+                            padding-bottom: 20px;
+                        }
+                    }
                     .text{
                         padding-left: 40px;
+                        @media (max-width: 767px) {
+                            width: 100%;
+                            padding-left: 0;
+                        }
                         h6{
                             font-family: var(--n_e_l);
                         }

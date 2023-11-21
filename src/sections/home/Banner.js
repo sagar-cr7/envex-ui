@@ -68,7 +68,10 @@ export default function Banner() {
 		<div
 			className={`${styles.banner} ${loaded && styles.banner_animation_onload}`}
 		>
-			<img src={Overlay.src} className={`${styles.loader_img} fullwidthimg`} />
+			<img
+				src={Overlay.src}
+				className={`${styles.loader_img} fullwidthimg hidden-xs`}
+			/>
 			<img src={BannerImg.src} className={`${styles.banner_img} img-responsive`} />
 			<div className={`${styles.banner_info}`}>
 				<div className={`${styles.banner_title}`}>

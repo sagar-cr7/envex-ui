@@ -143,6 +143,9 @@ picture {
 .sticky_animation{
 	position: sticky;
 	top: 80px;
+	@media (max-width: 767px) {
+		position: inherit;
+	}
 }
 
 // flex class start
