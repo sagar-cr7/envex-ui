@@ -18,7 +18,7 @@ import LiDots from "../../../public/img/home/li_dots.png";
 /** Home Hero Section */
 export default function OurBusiness() {
 	return (
-		<div className={`${styles.business_section}`}>
+		<div className={`${styles.business_section} sticky_animation`}>
 			<div className="container">
 				<div className={`${styles.business} ptb_100`}>
 					<img src={Dots1.src} className={`${styles.dots} img-responsive`} />

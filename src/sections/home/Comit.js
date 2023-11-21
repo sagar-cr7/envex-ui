@@ -17,7 +17,7 @@ import Dots2 from "../../../public/img/home/dots_2.png";
 /** Home Hero Section */
 export default function Comit() {
 	return (
-		<div className={`${styles.comit}`}>
+		<div className={`${styles.comit} sticky_animation`}>
 			<div className="container">
 				<div className={`${styles.business}`}>
 					<img src={Dots2.src} className={`${styles.dots} img-responsive`} />

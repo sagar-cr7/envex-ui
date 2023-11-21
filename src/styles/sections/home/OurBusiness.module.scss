@@ -3,7 +3,7 @@
 .business_section{
     background-color: var(--color_primary);
     .business{
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-wrap: wrap;
         position: relative;
