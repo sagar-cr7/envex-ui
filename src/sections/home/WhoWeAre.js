@@ -164,12 +164,15 @@ export default function WhoWeAre() {
 								</div>
 							</div>
 							<p className="pt_30">
-								A serial entrepreneur with a deep passion for renewables and carbon
-								business. He has been actively associated with, built and managed
-								businesses in the carbon space over the last 15+ years. A trained
-								chemical engineer, Vishwajit has run multiple businesses over the last
-								25+ years. At ENVEX, he leads the strategy and business development
-								functions.
+								With a degree in Chemistry and a diploma in Business Management Pravin
+								started his journey in the International Commodity Markets as a junior
+								trader 1986 with Marpro an International Commodity Broking firm. After
+								short stints in Thailand and Australia trading commodities he returned
+								to India as an entrepreneur successfully establishing one of the largest
+								broking outfits in the country which later evolved into an association
+								with the then international trading giant Andre & Cie based out of
+								Lausanne in Switzerland. Pravin currently runs a family office and
+								follows both the financial and commodity markets.
 							</p>
 						</div>
 						<div className={`${styles.popup}`}>
@@ -184,12 +187,12 @@ export default function WhoWeAre() {
 								</div>
 							</div>
 							<p className="pt_30">
-								A serial entrepreneur with a deep passion for renewables and carbon
-								business. He has been actively associated with, built and managed
-								businesses in the carbon space over the last 15+ years. A trained
-								chemical engineer, Vishwajit has run multiple businesses over the last
-								25+ years. At ENVEX, he leads the strategy and business development
-								functions.
+								30+ years in business strategy with a strong focus on execution. He has
+								worked closely with organizations across the globe in helping them
+								understand the business opportunity and to prepare and scale their
+								business to benefit from these. At ENVEX, Aditya will work closely with
+								the various teams in helping identifying the various GTM strategies and
+								efficient scaling.
 							</p>
 						</div>
 					</Slider>
