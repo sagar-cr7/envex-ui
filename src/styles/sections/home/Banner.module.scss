@@ -38,6 +38,7 @@
             margin-top: 40vh;
             @media (max-width: 767px) {
                 padding: 20px;
+                margin-left: var(--container_left_space);
                 
             }
             h1{
@@ -45,7 +46,7 @@
                 flex-wrap: wrap;
                 @media (max-width: 767px) {
                     text-align: center;
-                    font-size: 29px;
+                    font-size: 26px;
                     line-height: 35px;
                 }
                 .span1{
@@ -53,6 +54,9 @@
                 }
                 .banner_animaction{
                     width: 400px;
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
                     .span{
                         overflow: hidden;
                     }

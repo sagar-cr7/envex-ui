@@ -406,6 +406,11 @@ picture {
 		position: relative;
 		width: fit-content;
 		width: 100%;
+		@media only screen and (max-width: 767px) {
+			white-space: nowrap;
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
 	  }
 	  
 	  .tab_titles .tab_title {
@@ -461,6 +466,9 @@ picture {
 		transition: 0.3s;
 		z-index: 1;
 		border-radius: 50px;
+		@media only screen and (max-width: 767px) {
+			background-color: transparent;
+		}
 	  }
 	
 	  .active_bar + .active_bar{
