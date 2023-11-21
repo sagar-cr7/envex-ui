@@ -1,5 +1,6 @@
 /* eslint-disable no-redeclare */
 // MODULES //
+import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
@@ -18,10 +19,17 @@ import styles from "../../styles/sections/home/Banner.module.scss";
 
 // IMAGES //
 import BannerImg from "../../../public/img/home/banner.jpg";
+import Overlay from "../../../public/img/home/banner_layer.svg";
 import Image from "next/image";
 
 /** Home Hero Section */
 export default function Banner() {
+	const [loaded, setLoaded] = useState(false);
+	useEffect(() => {
+		setTimeout(() => {
+			setLoaded(true);
+		}, 500);
+	}, []);
 	var settings = {
 		dots: false,
 		infinite: true,
@@ -46,7 +54,10 @@ export default function Banner() {
 		autoplaySpeed: 2000,
 	};
 	return (
-		<div className={styles.banner}>
+		<div
+			className={`${styles.banner} ${loaded && styles.banner_animation_onload}`}
+		>
+			<img src={Overlay.src} className={`${styles.loader_img} fullwidthimg`} />
 			<img src={BannerImg.src} className={`${styles.banner_img} img-responsive`} />
 			<div className={`${styles.banner_info}`}>
 				<div className={`${styles.banner_title}`}>
