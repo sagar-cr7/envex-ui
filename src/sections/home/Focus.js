@@ -63,21 +63,21 @@ export default function Focus() {
 		setProgressWidth((currInd / 3) * 100);
 	};
 	const images = [
-		// {
-		// 	src: FirstIcon1.src,
-		// 	thumb: FirstIcon1.src,
-		// },
 		{
 			src: FirstIcon2.src,
 			thumb: FirstIcon2.src,
 		},
 		// {
-		// 	src: FirstIcon3.src,
-		// 	thumb: FirstIcon3.src,
+		// 	src: FirstIcon2.src,
+		// 	thumb: FirstIcon2.src,
 		// },
 		// {
-		// 	src: FirstIcon4.src,
-		// 	thumb: FirstIcon4.src,
+		// 	src: FirstIcon2.src,
+		// 	thumb: FirstIcon2.src,
+		// },
+		// {
+		// 	src: FirstIcon2.src,
+		// 	thumb: FirstIcon2.src,
 		// },
 	];
 	return (

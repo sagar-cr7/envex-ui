@@ -17,7 +17,7 @@ import Location from "../../../public/img/home/location.png";
 /** Home Hero Section */
 export default function Partner() {
 	return (
-		<div className={`${styles.partner_section} ptb_100`} name="contact">
+		<div className={`${styles.partner_section} ptb_80`} name="contact">
 			<div className="container">
 				<div className={`${styles.partner}`}>
 					<div className={`${styles.info} pb_100`}>

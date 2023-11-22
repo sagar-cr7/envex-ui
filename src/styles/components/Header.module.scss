@@ -51,8 +51,11 @@
             font-size: 16px;
             color: var(--color_text);
             text-transform: uppercase;
-            @media (max-width: 991px) {
+            @media (max-width: 1199px) {
               font-size: 14px;
+            }
+            @media (max-width: 991px) {
+              font-size: 13px;
             }
             @media (max-width: 767px) {
               font-size: 22px;

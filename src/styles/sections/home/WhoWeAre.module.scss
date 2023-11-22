@@ -20,37 +20,57 @@
             border: 1px solid #C5CCD0;
             transform: translate(-50%,-50%);
             background-color: var(--color_white);
+            @media (max-width: 1199px) {
+                padding: 40px 30px 120px 30px;
+            }
             @media (max-width: 767px) {
                 width: 95%;
                 height: 90vh;
                 overflow: hidden;
-                padding: 20px 10px;
+                padding: 20px 15px;
+                overflow-y: scroll;
+            }
+            @media (max-height: 670px) {
+                height: 90vh;
+                overflow: hidden;
                 overflow-y: scroll;
             }
             .popup{ 
                 .img_text{
                     display: flex;
-                    align-items: center;
-                    @media (max-width: 767px) {
+                    align-items: flex-start;
+                    @media (max-width: 991px) {
                         flex-wrap: wrap;
                     }
                     .img{
-                        @media (max-width: 767px) {
+                        width: 25%;
+                        @media (max-width: 991px) {
                             width: 100%;
                             padding-bottom: 20px;
                         }
+                        
                     }
                     .text{
+                        width: 75%;
                         padding-left: 40px;
-                        @media (max-width: 767px) {
+                        @media (max-width: 991px) {
                             width: 100%;
                             padding-left: 0;
                         }
                         h6{
                             font-family: var(--n_e_l);
                         }
+                        h4{
+                            display: flex;
+                            img{
+                                margin-left: 20px;
+                            }
+                        } 
                     }
-                }  
+                } 
+                
+
+                
             }
             .close_btn{
                 top: 25px;

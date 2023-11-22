@@ -21,7 +21,7 @@ export default function OurBusiness() {
 		<div className={`${styles.business_section} sticky_animation`} name="ace">
 			<div className="container">
 				<div className={`${styles.business} ptb_100`}>
-					<img src={Dots1.src} className={`${styles.dots} img-responsive`} />
+					{/* <img src={Dots1.src} className={`${styles.dots} img-responsive`} /> */}
 					<div className={`${styles.box}`}>
 						{/* <div className={`${styles.title} section_title`}>Our business</div> */}
 						<h4 className="pt_20 pb_20 text_lg">ACX-ENVEX Partnership</h4>

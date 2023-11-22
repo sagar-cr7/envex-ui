@@ -5,13 +5,13 @@
     background-repeat: no-repeat;
     background-image: url(../../../../public/img/home/comit_bg.jpg);
     @media (max-width: 767px) {
-        padding-top: 50px;
+        // padding-top: 50px;
     }
     .business{
         min-height: 100vh;
         display: flex;
         flex-wrap: wrap;
-        // align-items: flex-end;
+        align-items: center;
         position: relative;
         @media (max-width: 767px) {
             height: auto;
@@ -42,10 +42,11 @@
                 @media (max-width: 767px) {
                     width: 100%;
                     padding-left: 0;
+                    padding-top: 30px;
                 }
                 .comit_img{
-                    bottom: 0;
-                    position: absolute;
+                    // bottom: 0;
+                    // position: absolute;
                 }
             }
             .title{

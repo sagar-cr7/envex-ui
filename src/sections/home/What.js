@@ -23,7 +23,7 @@ export default function What() {
 	return (
 		<div className={`${styles.what_make} ptb_100`} name="usps">
 			<div className="container">
-				<div className={`${styles.title} section_title pb_40`}>Our business</div>
+				<div className={`${styles.title} section_title pb_40`}>What makes us</div>
 				<div className={`${styles.what_section}`}>
 					<div className={`${styles.box}`}>
 						<img src={WhatIcon1.src} className="img-responsive pb_20" />
