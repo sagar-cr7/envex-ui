@@ -155,7 +155,7 @@ export default function WhoWeAre() {
 						<div className={`${styles.popup}`}>
 							<div className={`${styles.img_text}`}>
 								<div className={`${styles.img}`}>
-									<img src={Vishwajit_Dahanukar.src} className="img-responsive b_r_20" />
+									<img src={Pravin.src} className="img-responsive b_r_20" />
 								</div>
 								<div className={`${styles.text}`}>
 									<h4 className="text_lg f_w_b color_secondary">Pravin Dongre</h4>
@@ -178,7 +178,7 @@ export default function WhoWeAre() {
 						<div className={`${styles.popup}`}>
 							<div className={`${styles.img_text}`}>
 								<div className={`${styles.img}`}>
-									<img src={Vishwajit_Dahanukar.src} className="img-responsive b_r_20" />
+									<img src={AdityaSapru.src} className="img-responsive b_r_20" />
 								</div>
 								<div className={`${styles.text}`}>
 									<h4 className="text_lg f_w_b color_secondary">Aditya Sapru</h4>

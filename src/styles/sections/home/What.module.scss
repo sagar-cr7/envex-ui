@@ -10,6 +10,9 @@
             width: 31.87%;
             border-radius: 20px;
             background-color: var(--color_tertiary);
+            @media (max-width: 1199px) {
+                width: 48%;
+            }
             @media (max-width: 767px) {
                 width: 100%;
             }

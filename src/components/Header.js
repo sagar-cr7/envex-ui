@@ -106,7 +106,7 @@ const Header = () => {
 									duration={500}
 									className={`${styles.menu_link} `}
 								>
-									USPs
+									USP<span>s</span>
 								</ScrollSection>
 							</li>
 							<li>

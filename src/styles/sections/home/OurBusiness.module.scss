@@ -7,6 +7,9 @@
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        @media (max-height: 700px) {
+            padding-top: 40px;
+        }
         @media (max-width: 767px) {
             flex-wrap: wrap;
             height: auto;
@@ -21,6 +24,9 @@
         }
         .box{
             width: 40%;
+            @media (max-width: 991px) {
+                width: 50%;
+            }
             @media (max-width: 767px) {
                 width: 100%;
             }
@@ -28,6 +34,9 @@
                 width: 60%;
                 padding-left: 40px;
                 padding-top: 10px;
+                @media (max-width: 991px) {
+                    width: 50%;
+                }
                 @media (max-width: 767px) {
                     width: 100%;
                     padding-left: 0;

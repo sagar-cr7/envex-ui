@@ -51,9 +51,18 @@
                 }
                 .span1{
                     width: 710px;
+                    @media (max-width: 1199px) {
+                        width: 520px;
+                    }
+                    @media (max-width: 991px) {
+                        width: 465px;
+                    }
                 }
                 .banner_animaction{
                     width: 400px;
+                    @media (max-width: 991px) {
+                        width: 250px;
+                    }
                     @media (max-width: 767px) {
                         width: 100%;
                     }
@@ -108,7 +117,13 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border: 0.5px solid #56605b3d;
-       
+        @media (max-width: 1199px) {
+            width: 95%;
+            padding: 25px 20px;
+        }
+        @media (max-width: 991px) {
+            width: 98%;
+        }
         .counter_box{
             width: 25%;
             padding: 0 15px;

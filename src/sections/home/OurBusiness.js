@@ -24,8 +24,8 @@ export default function OurBusiness() {
 					<img src={Dots1.src} className={`${styles.dots} img-responsive`} />
 					<div className={`${styles.box}`}>
 						{/* <div className={`${styles.title} section_title`}>Our business</div> */}
-						<h4 className="pt_20 pb_40 text_lg">ACX-ENVEX Partnership</h4>
-						<p className="pb_40">
+						<h4 className="pt_20 pb_20 text_lg">ACX-ENVEX Partnership</h4>
+						<p className="pb_30">
 							By understanding India’s evolving ESG scenario and to pave the way
 							towards its international targets, we have partnered with ACX - a global
 							environmental financial products platform, that enables the establishment

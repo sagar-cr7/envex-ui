@@ -57,7 +57,16 @@
                 right: 25px;
                 cursor: pointer;
                 position: absolute;
+                @media (max-width: 767px) {
+                    top: 20px;
+                    right: 15px;
+                }
             }
+        }
+        :global(.slick-slider) {
+            @media (max-width: 767px) {
+                margin-bottom: 50px;
+            }  
         }
         :global(.slick-next) {
             &::before{
@@ -67,6 +76,9 @@
             bottom: -65px;
             width: 30px;
             top: inherit;
+            @media (max-width: 767px) {
+                bottom: -50px;
+            }
         }
         :global(.slick-prev) {
             &::before{
@@ -78,6 +90,9 @@
             top: inherit;
             left: inherit;
             transform: rotate(-180deg);
+            @media (max-width: 767px) {
+                bottom: -50px;
+            }
         }
     }
     .title{
@@ -90,7 +105,9 @@
         grid-template-columns: repeat(2,1fr);
         grid-gap: 60px;
         align-items: center;
-
+        @media (max-width: 991px) {
+            align-items: flex-start;
+        }
         @media (max-width: 767px) {
             grid-template-columns: repeat(1,1fr);
             grid-gap: 40px;
