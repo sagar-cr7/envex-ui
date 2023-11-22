@@ -20,11 +20,11 @@ export default function Partner() {
 		<div className={`${styles.partner_section} ptb_80`} name="contact">
 			<div className="container">
 				<div className={`${styles.partner}`}>
-					<div className={`${styles.info} pb_100`}>
+					<div className={`${styles.info} pb_50`}>
 						<div className={`${styles.title} section_title color_white`}>
 							Partner with us!
 						</div>
-						<p className="color_white pt_20 pb_30">
+						<p className="color_white pt_20">
 							Come, join us on Day Zero of revolutionising India’s journey to Net Zero.
 						</p>
 						<ul>

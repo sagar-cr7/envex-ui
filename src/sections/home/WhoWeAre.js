@@ -168,9 +168,7 @@ export default function WhoWeAre() {
 										trader 1986 with Marpro an International Commodity Broking firm. After
 										short stints in Thailand and Australia trading commodities he returned
 										to India as an entrepreneur successfully establishing one of the largest
-										broking outfits in the country which later evolved into an association
-										with the then international trading giant Andre & Cie based out of
-										Lausanne in Switzerland. Pravin currently runs a family office and
+										broking outfits in the country. Pravin currently runs a family office and
 										follows both the financial and commodity markets.
 									</p>
 									

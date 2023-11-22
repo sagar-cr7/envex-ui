@@ -16,6 +16,7 @@
             }
             p{
                 opacity: 0.7;
+                padding-bottom: 45px;
             }
             ul{
                 li{
@@ -35,7 +36,7 @@
         }
         .form{
             width: 50%;
-            padding: 30px 30px;
+            padding: 20px 20px;
             border-radius: 20px;
             border: 1px solid #b6b5c575;
             @media (max-width: 767px) {
@@ -92,7 +93,7 @@
                         opacity: 0.7;
                         font-size: 18px;
                         padding-bottom: 5px;
-                        margin-bottom: 10px;
+                        margin-bottom: 0px;
                         font-family: var(--n_r);
                         color: #A8CA9A;
                         cursor: pointer;

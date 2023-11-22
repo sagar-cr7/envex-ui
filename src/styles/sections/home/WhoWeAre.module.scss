@@ -27,7 +27,7 @@
                 width: 95%;
                 height: 90vh;
                 overflow: hidden;
-                padding: 20px 15px;
+                padding: 70px 15px 20px;
                 overflow-y: scroll;
             }
             @media (max-height: 670px) {
@@ -47,6 +47,9 @@
                         @media (max-width: 991px) {
                             width: 100%;
                             padding-bottom: 20px;
+                        }
+                        img{
+                            border: 1px solid #e9eee6;
                         }
                         
                     }
