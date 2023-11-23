@@ -1,6 +1,6 @@
 /* eslint-disable no-redeclare */
 // MODULES //
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 // COMPONENTS //
 
 // SECTIONS //
@@ -18,10 +18,6 @@ import close from "../../../public/img/home/close.svg";
 /** Home Hero Section */
 export default function Partner() {
 	const contactForm = useRef();
-	const clearFormData = () => {
-		contactForm.current.reset();
-	};
-
 	/** openPopup function */
 	function openPopup() {
 		const popup = document.getElementById("popup");
