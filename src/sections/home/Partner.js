@@ -38,11 +38,6 @@ export default function Partner() {
 		fetch(scriptURL, {
 			method: "POST",
 			body: new FormData(contactForm.current),
-		});
-
-		fetch(scriptURL, {
-			method: "POST",
-			body: new FormData(contactForm.current),
 		})
 			// .then((response) => alert("You have successfully submitted."))
 			.then((response) => openPopup())
@@ -87,13 +82,27 @@ export default function Partner() {
 						>
 							<div className={`${styles.form_group} fadeInUp`}>
 								<div className={`${styles.form_field}`}>
-									<input type="text" placeholder="Full Name" name="Name" required />
+									<input
+										type="text"
+										placeholder="Full Name"
+										name="Name"
+										pattern="[A-Za-z]+"
+										title="letters only"
+										required
+									/>
 								</div>
 								<div className={`${styles.form_field}`}>
 									<input type="email" placeholder="Email ID" name="Email" required />
 								</div>
 								<div className={`${styles.form_field}`}>
-									<input type="text" placeholder="Phone" name="Mobile" required />
+									<input
+										type="text"
+										placeholder="Phone"
+										name="Mobile"
+										pattern="[0-9]+"
+										title="only numbers"
+										required
+									/>
 								</div>
 								<div className={`${styles.msg}`}>
 									<textarea
